@@ -20,4 +20,14 @@ public class PracticeTest {
         assertEquals(5.1, price - discount, 0.5);
         assertNotEquals(4.9, price - discount, 0.5);
     }
+
+    @Test
+    public void testComp() {
+        //Equal To
+        assertEquals("If a is equal to b return the String 'a = b'", "5 = 5", Practice.comp(5, 5));
+        //Greater Than
+        assertEquals("If a is less than b return the String  'a < b'", "4 < 5", Practice.comp(4, 5));
+        //Less Than
+        assertEquals("If a is greater than b return the String 'a > b'", "5 > 4", Practice.comp(5, 4));
+    }
 }
